@@ -1,0 +1,332 @@
+body {
+    font-size: 15pt;
+    font-family: saad;
+}
+
+
+
+@font-face {
+  font-family: 'saad';
+  src: url(saad1.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --h:100vh;
+  --clr1:skyblue;
+}
+
+.bus_schedule_main{
+  background-color: grey;
+  width:100vw;
+  display: flex;
+  height: var(--h);
+}
+
+.containers{
+  background:black;
+  border: 1px solid white;
+  width: 70%;
+justify-content: space-around;
+align-items: center;
+  display: flex;
+  
+  background-size: 120%;
+  background-position: center;
+  margin: auto;
+  height: 80%;
+}
+.containers .input{
+  width: 40%;
+  position: relative;
+  height: 80%;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+  /*border-right: 1px solid white;*/
+}
+
+.containers .detail_input{
+  width: 35%;
+  height: 60%;
+ border-radius: 20px;
+ border-left: 3px solid var(--clr1);
+ border-right:3px solid var(--clr1);
+ overflow:scroll;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+
+}
+.in{
+ width: 80%;
+  color: var(--clr1);
+
+}
+.in p{
+  color: white;
+  font-size: 0.8rem;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--clr1);
+  border-radius: 10px;
+  padding: 4px 0px;
+  margin-top:10%;
+}
+.from{
+  margin-top: 10%;
+  
+}
+.drp{
+  position: relative;
+}
+.to{
+  margin-top: 5%;
+}
+.btn{
+  
+  color: var(--clr1);
+  border: 2px double var(--clr1);
+  padding: 5px 0px;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  width: 45%;
+}
+.input select{
+  width: 100%;
+  -webkit-appearance: none;
+  outline: 0;
+  appearance: none;
+  padding-left: 10px;
+  font-family: saad;
+  font-size:1rem;
+  border-radius: 5px;
+  border: 1px solid var(--clr1);
+  /*background: rgba(240,045,0,0.1));*/
+  color: black;
+  
+}
+
+
+ .drp::after{
+   width: 20%;
+   height: 60%;
+   border: 1px solid white;
+   background: lightblue;
+   content: '\25BC';
+   position: absolute;
+   display: flex;
+   box-sizing: border-box;
+   color: black;
+   justify-content: center;
+   align-items: center;
+   top: 42.5%;
+   right: 0px;
+   pointer-events: none;
+   border-radius: 0px 05px 5px 0px;
+ }
+.svg{
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background:rgba(0,0,0,0.1);
+  width: 100vw;
+  height: var(--h);
+}
+#Layer_1{
+ 
+
+}
+.st{
+  transition: 0.84s;
+  stroke-width: 1px;
+ stroke: var(--clr1);
+fill: none;
+stroke-dashoffset: 300;
+stroke-dasharray: 300;
+
+}
+
+.st1{
+  transition: 1.4s;
+/*  stroke-dasharray: 0;*/
+  stroke-dashoffset: 0;
+}
+.bus_det{
+  transition: 0.5s;
+  width: 90%;
+  min-height: 20%;
+  height: 20%;
+  opacity: 0.8;
+  margin-bottom: 5%;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 2px solid skyblue;
+  border-top: 2px solid skyblue;
+  border-radius: 10px;
+  position: relative;
+}
+.bus_det:hover{
+  background: green;
+  color: black;
+  transition: 1s;
+  transform: scale(1.1);
+}
+.bus_det:nth-child(1){
+  margin-top: 5%;
+}
+.icon{
+  pointer-events: none;
+  background-image:url(bus.svg);
+  background-size:80% 80%;
+  border-right: 0.5px double skyblue;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 30%;
+  height: 100%;
+}
+.bus_no{
+  pointer-events: none;
+  border-left: 1px solid var(--clr1);
+  margin-left: 2%;
+  font-size: 0.8rem;
+  color: skyblue;
+  padding-left:5%;
+  flex:1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+/*SECOND PAGE*/
+
+
+.bus_animation{
+ display: none;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: var(--h);
+  background: rgba(0,0,0,1);
+}
+.show{
+  display: flex;
+}
+.ani_container{
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  width: 70%;
+  margin: auto;
+  height: 80%;
+  border-radius: 20px;
+  border: 2px solid var(--clr1);
+  
+}
+.ani_head{
+  border-radius:20px;
+ border: 1px solid var(--clr1);
+ width: 40%;
+  height: 40%;
+line-height:1.3;
+color:var(--clr1);
+margin-top: 3%;
+margin-left: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+font-size: 0.8rem;
+}
+.animation_field{
+  
+  width: 100%;
+  position: relative;
+
+flex: 1;
+}
+.bus{
+  transition: 2s;
+  bottom:0px;
+  width:40%;
+  height: 100%;
+  
+  position: absolute;
+  margin-top: 3%;
+ color: white;
+ animation: saad infinite 10s linear;
+ /*background-image: url(bus_ani.svg);*/
+ background-size:100% 100%;
+ background-position: center;
+
+}
+
+@keyframes saad{
+  0%{
+    left:0%;
+  }
+  50%{
+    left:60%;
+    transform: rotateY(0deg);
+  }
+  51%{
+    transform: rotateY(180deg);
+  }
+  100%{
+    left:0%;
+    transform: rotateY(180deg);
+  }
+}
+.cont_bus{
+  width: 8%;
+  height: 40%;
+  border-radius:20px;
+  border:1px solid var(--clr1);
+  position: absolute;
+  right: 5%;
+   margin-top:3%;
+   color: var(--clr1);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   
+}
+.i{transition: all 0.5s;
+  font-size: 1.1rem;
+  flex:1;
+  border-bottom: 1px solid var(--clr1);
+}
+.i:hover{
+  color: red;
+  transform: scale(1.1);
+  
+}
+.wheel{
+  fill:var(--clr1);
+}
+.home{
+  position: absolute;
+  color: var(--clr1);
+  top: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+ padding: 15px;
+  border: 2px solid var(--clr1);
+}

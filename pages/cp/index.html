@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>saad</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles --> 
+  
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="inner_style.css">
+</head>
+
+<body>
+<div class="svg">
+    
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+ height="100vh" width="100vw" style="enable-background:new 0 0 440px 600px;" xml:space="preserve">
+	 
+<polyline class="st0 point" points=""/>
+<polyline class="st1 point" points=""/>
+<polyline class="st2 point" points=""/>
+<polyline class="st3 point" points=""/>
+<polyline class="st4 point" points=""/>
+<polyline class="socket_line" points=""/>
+
+
+</svg>
+ </div>
+  <section class="cp">
+   
+    <div class="cp_handle">
+   <div class="logo">
+     
+   </div>
+      <div class="screen">
+    
+      <div class="to_hide">  <h6> STATUS :<span id="status">OFF</span></h6></div>
+        
+       <div class="to_hide"> <h6> BRIGHTNESS : <span class="percent">14%</span></h6></div>
+      </div>
+            <div  onclick="on_cp()" class="on_off"></div>
+            <p>BRIGHTNESS</p>
+            <input id="range_brightness" min="1"  value="14" max="100" type="range"/>
+    </div>
+    
+    <div class="cp_cont">
+      <div class="blur">
+       
+      </div>
+      
+     <div class="head">
+      
+      <h3>CONTROL PANEL </h3>
+     </div>
+     
+     <div class="fun_cp"> 
+      <div class="main_cp">
+       
+             <form id="main0" class="all_main">
+             <h4> REGISTER </h4>
+     
+             <div class="name reg">
+               <input required="required"
+               placeholder="&#xf641; Enter Your Name" type="text">
+             </div>
+             
+             <div class="mobile reg">
+              <input required="required" minlength="10" maxlength="10" placeholder="Enter Your Mobile no" type="tel">
+             </div>  
+             
+             <div class="email reg">
+              <input required="required"  placeholder="Enter Your Mail" type="email">
+             </div> 
+             
+             <div class="address reg">
+             <input required="required" placeholder="Enter Your Address" type="text">
+             </div> 
+             
+             <div class="pin_code reg">
+            <input required="required" minlength="6" maxlength="6" placeholder="Enter Your Pincode" type="tel">
+             </div> 
+             
+             <div class="photo_upl reg">
+             <input required="required" type="file">
+             </div>
+             
+             <input type="submit" value="REGISTER" class="btn_reg">
+            
+             </form>
+          
+          
+          
+             <div id="main1" class="all_main">
+                     <h4> FEEDBACK</h4>
+                    <div class="text feed">
+                      <p>SAY YOUR VALUABLE WORDS</p>
+                      <input cols="1" rows="40" type="textarea">
+                    </div>
+                     
+                    <div class="rating feed">
+                      <p> RATE OUR WEB PAGE </p>
+                      <div class="rating_star">
+ <div class="s1" onclick="rat1(0)"> <i class="fas fa-star"> </i></div>
+ <div class="s1" onclick="rat1(1)"> <i class="fas fa-star"> </i></div> 
+ <div class="s1" onclick="rat1(2)"> <i class="fas fa-star"> </i></div>
+ <div class="s1" onclick="rat1(3)"> <i class="fas fa-star"> </i></div> 
+ <div class="s1" onclick="rat1(4)"> <i class="fas fa-star"> </i></div>
+                      </div>
+                    </div>
+                    <div class="rating_2 feed">
+                      <p>Would You recommended this page to your firends ? </p>
+                      <div class="rating_star">
+ <div class="s2" onclick="rat2(0)"> <i class="fas fa-star"> </i></div>
+ <div class="s2" onclick="rat2(1)"> <i class="fas fa-star"> </i></div> 
+ <div class="s2" onclick="rat2(2)"> <i class="fas fa-star"> </i></div>
+ <div class="s2" onclick="rat2(3)"> <i class="fas fa-star"> </i></div> 
+ <div class="s2" onclick="rat2(4)"> <i class="fas fa-star"> </i></div>
+                      </div>
+                    </div>
+                    <div onclick="feed()"  class="button_feed">
+                 <i class="fa fa-paper-plane fw"></i>     FEEDBACKS 
+                    </div>
+             </div> 
+             
+             
+             
+             <div id="main2" class="all_main">
+                <h4> ABOUT PROJECT</h4>
+                <div class="pro_photo">
+                  
+                </div>
+                <div class="pro_det">
+                 PROJECT NAME: SRMS PORTAL.<br>
+                 MAIN-WORK: BUS SCHEDULE .<br>
+                 THEME : FULLY SCI-FI.<br>
+                 TIME-TAKEN : 5-7 DAYS <br>
+                 TO: ANKUR SIR, NEHA MAAM SACHIN SIR
+                 <br>
+                </div>
+             </div> 
+             
+             
+             
+             <div id="main3" class="all_main">
+                <h4> CONTACT US</h4>
+                     <div class="cont">
+                  <div><i class="fab fa-instagram icon_c"></i>
+                  INSTA : saadmalik8822  </div>
+                   
+                   <div>    <i class="fab fa-whatsapp icon_c"></i>
+                   WHATSAPP : +918650627025
+                   </div>
+                  
+                     <div>  <i class="fa fa-envelope icon_c"></i> MAIL : anwarsaad383@gmail.com 
+                     </div>
+                   
+                      <div> <i class="fa fa-address-card icon_c "></i> ADDRESS: BAHERI , BAREILLY (U.P) 
+                      </div>
+                    </div>
+                    <div class="g_map">
+                      <h6>G-MAP DETAIL : </h6>
+                      <div class="g_map_img">
+                        
+                      </div>
+                    </div>
+             </div> 
+             
+             
+             
+             <div id="main4" class="all_main">
+                       <h4> ABOUT DEVELOPER</h4>
+                     <div class="photo_and_outline">
+                            <div class="photo">
+                             
+                             </div>
+                            <div class="outline">
+                              SAAD ANWAR<br>
+                              COURSE : B.TECH<br>
+                              BRANCH : CS & E <br>
+                              YEAR : 2ND <br>
+                              SEMESTER : 3LD..<br>
+                              
+                             </div>
+                     </div>
+                     <div class="all_detail">
+                       I'm Pursuing By b.tech degree From Srms college of engineering technology and research bareilly at the time of writing i'm in 3ld semester of 2 year  
+                     </div>
+             </div>
+             
+      </div>   
+      <div class="control_button_touch">
+           <div id="0"class="b0 btn_cp">  <h6>REGISTER</h6></div>
+           <div id="1"class="b1 btn_cp"><h6>FEEDBACK</h6></div>
+           <div id="2"class="b2 btn_cp"><h6> PROJECT </h6></div>  
+           <div id="3"class="b3 btn_cp"> <h6>CONTACT</h6></div> 
+           <div id="4"class="b4 btn_cp"><h6>DEVELOPER</h6></div>
+           
+      </div>
+     </div>
+    </div>
+    
+    
+    
+    <div onclick="main_switch()" class="socket">
+      
+    </div>
+   <a  class="home" href="/index.html"><i class="fas fa-home"></i></a>
+    
+  </section>
+  <!-- Project --> 
+    <script src="all.js"></script>
+  <script src="cp_main.js"></script>
+ 
+
+</body>
+</html>
+
+

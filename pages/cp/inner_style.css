@@ -1,0 +1,444 @@
+:root{
+  --clr:rgba(135,206,235,0.5);
+}
+@font-face{
+  font-family:"saad";
+  src:url(fotns/Space.ttf);
+  
+}
+
+/* for highlights*/
+@font-face{
+  font-family: "head";
+  src:url(fotns/saad1.ttf);
+}
+#main4
+{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*background-color: rgba(25,240,45,0.09);*/
+color:var(--clr);
+
+}
+#main4 h4{
+  font-family: head;
+  font-weight: 0;
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 2px solid var(--clr);
+  width: 90%;
+  border-radius: 0px 0px 20px 20px;
+ text-align: center;
+  
+}
+.photo_and_outline{
+ display: flex;
+ align-items: center;
+  flex:1;
+  width: 100%;
+ gap: 5px;
+ 
+}
+.photo,.outline{
+
+  height: 90%;
+}
+.photo{
+  border-right: 2px solid var(--clr);
+  flex-basis:40%;
+  background-image:url(my_photo.png);
+  background-size:cover;
+}
+
+.outline{
+  font-weight: 800;
+    font-family: saad;
+  font-size: 0.6rem;
+  line-height: 180%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid var(--clr);
+  flex: 1;
+}
+
+
+.all_detail{
+  font-family: saad;
+  flex: 1;
+  width: 100%;
+ border-top: 2px solid var(--clr);
+ border-radius: 20px 20px 0px 0px;
+ padding:10px;
+  box-sizing: border-box;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_cp {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  justify-content: flex-end;
+  font-size: 0.7rem;
+ background-size: 50% 50%;
+ background-position:45% 30%;
+ background-repeat: no-repeat;
+ color: skyblue;
+}
+.btn_cp h6{
+  pointer-events: none;
+  padding: 2px 5px;
+  border: 0.2px solid skyblue;
+  border-radius: 10px;
+}
+.b4{
+  background-image: url(icon_btn/dev_btn.svg);
+}
+.b3{
+  background-image: url(icon_btn/contact.svg);
+}
+.b2{
+  background-image: url(icon_btn/project.svg);
+}
+.b1{
+  background-image: url(icon_btn/feedback.svg);
+}
+.b0{
+  background-image: url(icon_btn/register.svg);
+}
+
+
+/*
+FOR PROJECT DETAIL PAGE 
+*/
+#main2{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+color:var(--clr);
+}
+
+#main2 h4{
+  font-family: head;
+  font-weight: 0;
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 2px solid var(--clr);
+  width: 90%;
+  border-radius: 0px 0px 20px 20px;
+ text-align: center;
+  
+}
+.pro_photo{
+  width: 100%;
+  flex-basis: 40%;
+  background-image: url(Sci-fiFinal.svg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pro_det{
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  color:var(--clr);
+  flex-basis: 50%;
+  font-family: head;
+  font-size: 0.71rem;
+  line-height: 140%;
+  border-top: 2px solid var(--clr);
+  border-radius: 020px 20px 0px 0px;
+}
+/*
+FOR CINTACT US PAGE
+
+*/
+#main3{
+    display: flex;
+  flex-direction: column;
+color:var(--clr);
+}
+
+#main3 h4{
+  font-family: head;
+  font-weight: 0;
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 2px solid var(--clr);
+  width: 90%;
+  border-radius: 0px 0px 20px 20px;
+ text-align: center;
+}
+.cont{
+margin: auto;
+margin-top: 5%;
+box-sizing: border-box;
+display: flex;
+  flex-basis:30%;
+  line-height: 200%;
+  width: 100%;
+  padding: 10px;
+  font-family: head;
+  font-size: 0.6rem;
+  flex-direction: column;
+}
+.cont div{
+  border-bottom: 0.3px double var(--clr);
+  border-radius: 0px 0px 2px 2px;
+  
+}
+.icon_c{
+  margin-right: 5px;
+}
+.icon_c:hover{
+  color: blue;
+  transition: 0.5s;
+  transform:scale(1.5);
+}
+.g_map{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+}
+.g_map h6{
+  padding-left: 10%;
+}
+.g_map_img{
+  border-radius: 20px;
+  width: 80%;
+  flex: 1;
+  margin: auto;
+  background-image: url(gmap.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.g_map_img::before{
+  border-radius: 20px 20px 0px 0px;
+  content: "RG3C+VRF Dhakia, Uttar Pradesh \A 28.8047075, 79.5220290";
+  position: absolute;
+  white-space: pre-wrap;
+  top: 0%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  color: white;
+  padding:5px 30px;
+  font-size: 0.5rem;
+  background-color:var(--clr);
+  opacity: 0;
+  transition:5s;
+}
+.g_map_img:hover.g_map_img::before{
+  transition: 1s;
+  opacity: 1;
+}
+
+/* FEEDBACK OAGE */
+
+
+#main1{
+    display: flex;
+  flex-direction: column;
+color:var(--clr);
+}
+
+#main1 h4{
+  font-family: head;
+  font-weight: 0;
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 2px solid var(--clr);
+  width: 90%;
+  border-radius: 0px 0px 20px 20px;
+ text-align: center;
+}
+.text{
+  flex-basis: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.5rem;
+}
+.text p{
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding-left: 5%;
+}
+.text input{
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  box-sizing: border-box;
+  background: var(--clr);
+  border: none;
+  
+}
+.rating,.rating_2{
+ line-height: 100%;
+  display: flex;
+  margin-top: 2%;
+  width: 100%;
+  flex-direction: column;
+  flex-basis:10%;
+
+}
+.feed p{
+  padding-left: 5%;
+  font-size: 0.5rem;
+}
+
+.rating_2{
+  line-height: 100%;
+  display: flex;
+  margin-top: 2%;
+  width: 100%;
+  flex-direction: column;
+  flex-basis:10%;
+}
+.rating_star{
+  margin: auto;
+  width: 90%;
+  flex:1;
+  display: flex;
+  gap: 5%;
+}
+.not{
+  opacity: 0.3;
+  
+}
+.s1,.s2{
+  transition: all 0.4s ease-in-out;
+}
+.fa-star{
+  pointer-events: none;
+}
+.button_feed{
+
+ border: 1px solid var(--clr);
+  margin-top: 10%;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  border-radius: 10px;
+}
+.button_feed .fw{
+  margin-right: 5px;
+}
+
+/*
+For register page*/
+
+
+
+
+
+#main0{
+    display: flex;
+  flex-direction: column;
+  gap:10px;
+color:var(--clr);
+}
+
+#main0 h4{
+  font-family: head;
+  font-weight: 0;
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 2px solid var(--clr);
+  width: 90%;
+  border-radius: 0px 0px 20px 20px;
+ text-align: center;
+}
+.reg{
+  
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.reg input{
+  padding-left: 10px;
+ color: var(--clr);
+ font-family: head;
+font-family: Arial, 'Font Awesome 5 Free';
+ font-style: normal; 
+  border: none;
+  background: rgba(0,0,0,0);
+  border-bottom: 1px solid skyblue;
+  width: 80%;
+  height: 90%;
+ position: relative;
+}
+.btn_reg{
+  font-weight: 800;
+  border: 1px solid skyblue;
+  font-size: 0.9rem;
+  margin: auto;
+ padding: 5px 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+margin-top:10px;
+font-family: saad;
+}
+.reg ::-webkit-input-placeholder{
+  font-family: head;
+  font-weight: 0;
+  font-size: 0.6rem;
+  color: var(--clr);
+  padding-left: 10px;
+}
+/**/
+.socket{
+  border-radius: 20px;
+  width: 10%;
+  transition:all 0.1s ease-in-out;
+  aspect-ratio:1/1;
+  background-image:url('main_socket.svg');
+  background-size:80% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:grey;
+  position: absolute;
+  left: 5px;
+  top: 40%;
+}
+.socket_line{ 
+  stroke:skyblue;
+  stroke-width:5px;
+  fill:none;
+  stroke:var(--clr);
+ }
+  
+.main_off{
+  display: none;
+}
+
+.socket_a{
+  
+  background-image:url('main_socket_off.svg');
+}
+
+.home{
+  text-decoration: none;
+  color: var(--clr);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  font-size: 2rem;
+}
